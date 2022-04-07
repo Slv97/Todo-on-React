@@ -1,9 +1,27 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
+html[data-theme="light"] {
+  /* container */
+  
+  --container-background: #fff;
+
+  /* btn Add */
+  --btn-txt-color: #000;
+  --btn-opacity: 90%;
+  --btn-background: #fff;
+}
+
+html[data-theme="dark"] {
+  /* container */
+  --container-txt-color: #fff;
+  --container-background: #1f2023;
+
+  /* btn Add */
+  --btn-txt-color: #fff;
+  --btn-opacity: 90%;
+  --btn-background: #383B40;
+}

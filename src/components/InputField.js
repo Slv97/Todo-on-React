@@ -2,10 +2,19 @@ import React from "react";
 
 const InputField = ({ addTodo, handleChange, text }) => {
     return (
-        <label>
-            <input value={text} type="text" onChange={handleChange} />
-            <button onClick={addTodo}>add</button>
-        </label>
+        <>
+            <label className="inputField">
+                <input
+                    value={text}
+                    type="text"
+                    onChange={handleChange}
+                    placeholder="Enter your task"
+                />
+            </label>
+            <button className="btnAdd" onClick={addTodo}>
+                add
+            </button>
+        </>
     );
 };
 
